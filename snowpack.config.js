@@ -3,8 +3,14 @@ module.exports = {
   mount: {
     /* ... */
   },
-  plugins: [
-    /* ... */
+  plugins: ['@snowpack/plugin-react-refresh',
+    [
+      '@snowpack/plugin-sass', {
+        compilerOptions: {
+          loadPath: './node_modules',
+        },
+      }
+    ],
   ],
   routes: [
     /* Enable an SPA Fallback in development: */

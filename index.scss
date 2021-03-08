@@ -1,0 +1,11 @@
+@charset "utf-8";
+@import "../node_modules/bulma/bulma.sass";
+.square {
+    position: relative;
+    width: 100%;
+}
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
